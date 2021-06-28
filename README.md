@@ -2,8 +2,9 @@
 
 2. La arquitectura que se presenta en el presente proyecto es de 3 capas donde el cliente se maneja mediante la tecnologia frontend de angular el cual realiza peticiones y solicitudes al servidor el cual maneja la tecnologia de node js y este mantiene conexion constante con base de datos mysql. el server realiza las consultas correspondientes a la base de datos y el servidor se encarga de devolverlas y renderizarlas en el cliente.
 
-3. Descargar el proyecto y ejecutarlo de manera local en la consola primero ejecute el servidor y la conexion de la base de datos
+3. Descargar el proyecto y ejecutarlo de manera local en la consola primero ejecute el servidor y la conexion de la base de datos.
     # cd server 
+    # npm install
     # npm run dev
     y en otro terminal ejecute
     # cd server
@@ -20,6 +21,7 @@
     
     Despues de tener listo el servidor y la base de datos creada. Corremos el cliente
     # cd client
+    # npm install
     # ng serve
     la cual se aloja en la url http://localhost:4200
     
