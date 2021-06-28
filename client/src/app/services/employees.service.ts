@@ -27,7 +27,7 @@ export class EmployeesService {
   }
 
   updateEmployee(id: string|number , updateEmployee: any){
-    return this.http.put(`${this.API_URI}/employees/edit/${id}`, updateEmployee)
+    return this.http.put(`${this.API_URI}/employees/${id}`, updateEmployee)
   }
 
 

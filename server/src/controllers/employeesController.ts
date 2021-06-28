@@ -75,13 +75,14 @@ class EmployeesController {
 
             if (err) {
                 res.json({ error: "hay un error update" + err })
-            } else if (result.length > 0) {
-                res.json({ message: 'the employee was updated' })
             } else {
-                res.json({
-                    message: "Employee doesn't exist"
-                })
+                res.json({ message: 'the employee was updated' })
             }
+            // } else {
+            //     res.json({
+            //         message: "Employee doesn't exist"
+            //     })
+            // }
 
 
         })

@@ -54,6 +54,10 @@ export class EmployeeFormComponent implements OnInit {
       )
   }
   updateEmployee(){
+    console.log("Entre al update");
+    console.log(this.employee.id);
+    console.log(this.employee);
+
     delete this.employee.created_at;
 
    this.employeesService.updateEmployee(this.employee.id,this.employee)
@@ -62,7 +66,10 @@ export class EmployeeFormComponent implements OnInit {
          console.log(res);
          this.route.navigate(['/employees'])
        },
-       err => console.error(err)
+       err => {
+        console.error(err)
+        this.route.navigate(['/employees'])
+       }
      )
   }
 
