@@ -11,7 +11,9 @@
     
     Tener en cuenta que para la conexion de la base de datos las credenciales de ingreso se encuentra en la carpeta server/src/routes/keys.ts
     
-    Para correr la base de datos ingresar en la consola
+    la aplicaciónn en local se corrio el mysql con wampp server
+    
+    Para correr la base de datos mysql ingresar en la consola
     # cd server
     # mysql -u root -p 
     el sistema solicitara contraseña: la cual es vacio. Para colocar el codigo de la base de datos desde la consola y se ejecute inmediatamente
